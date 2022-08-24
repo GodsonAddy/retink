@@ -31,6 +31,7 @@
     cursor: pointer;
     display: block;
     padding: 1rem;
+    font-weight: bolder;
 }
 
 .links li a:hover {

@@ -1,19 +1,18 @@
 import React from "react";
-import ikbal from "../../image/ikbal.png";
 import "./index.css";
 
 function Main() {
   return (
     <div>
       <main className="main-page">
-        <section className="glass">
-          <div className="glass-content">
+        <section className="container">
+          <div className="container-content">
             <div className="header">
               <h6 className="caption">What are you looking for?</h6>
               <div className="card">
                 <div className="contents">
                   <div className="icons">
-                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <i className="fa fa-graduation-cap" aria-hidden="true"></i>
                   </div>
                   <div className="features">
                     <h1>Help me create a Marketing Plan!</h1>
@@ -28,7 +27,7 @@ function Main() {
               <div className="card">
                 <div className="contents">
                   <div className="icons">
-                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <i className="fa fa-graduation-cap" aria-hidden="true"></i>
                   </div>
                   <div className="features">
                     <h1>I know what I am looking for</h1>
@@ -40,7 +39,7 @@ function Main() {
                 </div>
               </div>
             </div>
-            <img src={ikbal} alt="character" className="character" />
+            <div className="character"></div>
             <div className="image">
               <div className="comment">
                 <div className="commentcard1">

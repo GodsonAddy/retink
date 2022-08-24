@@ -3,7 +3,7 @@ import "./index.css";
 import retink from "../../image/retink.svg";
 import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "../Auth/Firebase";
+import { auth } from "../../firebase.config";
 
 function Nav() {
   const ref = useRef();
@@ -59,7 +59,7 @@ function Nav() {
       </div>
       {loggedUser ? (
         <button type="button" className="nav-button" onClick={logout}>
-          {loggedUser?.email}
+          Logout
         </button>
       ) : (
         <button

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     outline: none;
+    cursor: pointer;
 }
 .signup-page {
     display: flex;
@@ -27,7 +28,7 @@
 .signup-input input {
     border-radius: 8px;
     padding: 16px 24px;
-    width: 30rem;
+    width: 20rem;
     border-color:  grey;
     font-size: 16px;
     background-color: transparent;
@@ -40,7 +41,15 @@
     border-color: #1976d2
 }
 
+.signup-input label {
+    font-weight: 600;
+}
 
+.signup-input span {
+    font-size: 14px;
+    color: #e60000;
+    font-weight: bolder;
+}
 
 .signup-button {
     color: white;
@@ -67,6 +76,27 @@
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 10px;
+    height: 10px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .signup-links a {

@@ -2,12 +2,10 @@
     background: linear-gradient(119.77deg, #EA0022 1.67%, #754DE8 116.47%);
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 8rem;
 }
-
-/* .main-page::before{
+/* 
+.main-page::before{
   content: "";
   position: absolute;
   left: 0;
@@ -17,19 +15,17 @@
   background-color: white;
   height: 200px;
   
-}   */
+}    */
 
 
-.glass{
+.container{
     z-index: 2;
     backdrop-filter: blur(2rem);
     
 }
 
-.glass .glass-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container .container-content {
+    display: flex; 
 }
 
 .ellipse1, .ellipse2,
@@ -103,12 +99,13 @@
 .header {
     display: flex;
     flex-direction: column;
+    margin-left: 5rem;
 }
 
 .header .caption {
     font-style: normal;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 38px;
     line-height: 27px;
     color: white;
     margin-bottom: 30px;
@@ -169,20 +166,40 @@
 
 .image {
     display: flex;
-    
+    margin-right: 3rem;
 }
 
 .character {
     width: 824px;
     height: 824px;
-     position: absolute;
-    left: 100%;
-    right: -100%;
-    top: 0%;
-    bottom: 0%;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-   
+   -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+    display: block;
+    position: relative;
 }
+
+.character::after {
+    content: "";
+    background: url(../../image/Ikbal\ 3.svg);
+    top: 0;
+    left: -8rem;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+
 
 .image .comment {
     display: flex;
@@ -192,7 +209,7 @@
 .commentcard1 {
     height: 149.5px;
     width: 307px;
-    background: linear-gradient(to bottom left, white 95%, black 5%);
+    background: white;
     border-radius: 5px 5px 5px 0;
     box-shadow: 0px 15px 35px rgba(50, 50, 93, 0.1), 0px 5px 15px rgba(0, 0, 0, 0.07);
     padding: 10px;
@@ -203,28 +220,6 @@
     font-weight: 600;
 }
 
-/* .commentcard1::before {
-    content: "";
-    position: absolute;
-    right: 16.7rem;
-    bottom: 15rem;
-    height: 40px;
-    width: 40px;
-    background-color: white;
-    transform: skewY(120deg);
-    z-index: -1;
-} */
-
-/* .commentcard1::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    clip-path: polygon(100% 50%, 0 100%, 100% 100%);
-    width: 20%;
-    background-color: green;
-    height: 50px;
-} */
 
 .commentcard2 {
     height: 91.5px;
@@ -234,4 +229,52 @@
     box-shadow: 0px 15px 35px rgba(50, 50, 93, 0.1), 0px 5px 15px rgba(0, 0, 0, 0.07);
     padding: 10px;
     margin-top: 5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .image{
+        display: none;
+    }
+    .ellipse1, .ellipse2, .ellipse3, .ellipse4, .ellipse5,.ellipse6,.ellipse7, .ellipse8 {
+        display: none;
+        opacity: 0
+    }
+
+    .character {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+     .ellipse1, .ellipse2, .ellipse3, .ellipse4, .ellipse5,.ellipse6,.ellipse7, .ellipse8 {
+        display: none;
+        opacity: 0
+     }
+}
+
+@media only screen and (max-width: 550px) {
+    .image{
+        display: none;
+    }
+
+    .ellipse1, .ellipse2, .ellipse3, .ellipse4, .ellipse5,.ellipse6,.ellipse7, .ellipse8 {
+        display: none;
+        opacity: 0
+    }
+    
+    .card{
+        width: 320px;
+        height: 198px;
+    }
+
+    .header {
+        margin: 0 1.5rem 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .card{
+        width: 200px;
+        height: 320px;
+    }
 }
