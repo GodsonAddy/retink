@@ -1,0 +1,79 @@
+.retink {
+    width: 8rem;
+    height: 8rem;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page h1 {
+    margin-bottom: 20px;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.login-input input {
+    border-radius: 8px;
+    padding: 16px 24px;
+    width: 30rem;
+    border-color:  grey;
+    font-size: 16px;
+    background-color: transparent;
+    font-weight: bolder;
+}
+
+.login-input input:hover, 
+.login-input input:focus-within
+  {
+    border-color: #1976d2
+}
+
+/* .login-input label {
+    font-weight: 800;
+} */
+
+.login-button {
+    color: white;
+    background-color: #1976d2;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 700;
+    border: none;
+    line-height: 1;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    padding: 14px 28px;
+    font-size: 18px;
+}
+
+.login-button:hover {
+    background-color: #0d47a1;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.login-links a {
+    text-transform: none;
+    color: #e60000;
+    cursor: pointer;
+    font-weight: bolder;
+}

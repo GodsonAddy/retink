@@ -1,0 +1,237 @@
+.main-page {
+    background: linear-gradient(119.77deg, #EA0022 1.67%, #754DE8 116.47%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .main-page::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -110px;
+  clip-path: polygon(100% 50%, 0 100%, 100% 100%);
+  width: 100%;
+  background-color: white;
+  height: 200px;
+  
+}   */
+
+
+.glass{
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    
+}
+
+.glass .glass-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ellipse1, .ellipse2,
+.ellipse3, .ellipse4, 
+.ellipse5, .ellipse6, 
+.ellipse7, .ellipse8 
+{
+    background: white;
+    opacity: 0.16;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.ellipse1 {
+    width: 167px;
+    height: 167px;
+    left: 129px;
+    top: 407px;
+}
+
+.ellipse2 {
+    width: 167px;
+    height: 167px;
+    left: 1100px;
+    top: 155px;
+}
+
+.ellipse3 {
+    width: 221px;
+    height: 221px;
+    left: 989px;
+    top: 269px;
+}
+
+.ellipse4 {
+    width: 100px;
+    height: 100px;
+    left: 1249px;
+    top: 522px;
+}
+
+.ellipse5 {
+    width: 112px;
+    height: 112px;
+    left: 11px;
+    top: 589px;
+}
+
+.ellipse6 {
+    width: 211px;
+    height: 211px;
+    left: 61px;
+    top: 144px;
+}
+
+.ellipse7 {
+    width: 112px;
+    height: 112px;
+    left: 253px;
+    top: 478px;
+}
+
+.ellipse8 {
+    width: 112px;
+    height: 112px;
+    left: 1010px;
+    top: 518px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .caption {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 27px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(50, 50, 93, 0.11), 0px 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    width: 490px;
+    height: 138px;
+    margin-bottom: 20px;
+}
+
+.card .contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .contents .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.card .contents .features h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.card .contents .features p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.card .contents .icons {
+    width: 48px;
+    height: 48px;
+    background: rgba(245, 54, 92, 0.29);
+    border-radius: 50%;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.card .contents .icons {
+    color: #F5365C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    display: flex;
+    
+}
+
+.character {
+    width: 824px;
+    height: 824px;
+     position: absolute;
+    left: 100%;
+    right: -100%;
+    top: 0%;
+    bottom: 0%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+   
+}
+
+.image .comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentcard1 {
+    height: 149.5px;
+    width: 307px;
+    background: linear-gradient(to bottom left, white 95%, black 5%);
+    border-radius: 5px 5px 5px 0;
+    box-shadow: 0px 15px 35px rgba(50, 50, 93, 0.1), 0px 5px 15px rgba(0, 0, 0, 0.07);
+    padding: 10px;
+    position: relative;
+}
+
+.commentcard1 span {
+    font-weight: 600;
+}
+
+/* .commentcard1::before {
+    content: "";
+    position: absolute;
+    right: 16.7rem;
+    bottom: 15rem;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    transform: skewY(120deg);
+    z-index: -1;
+} */
+
+/* .commentcard1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    clip-path: polygon(100% 50%, 0 100%, 100% 100%);
+    width: 20%;
+    background-color: green;
+    height: 50px;
+} */
+
+.commentcard2 {
+    height: 91.5px;
+    width: 190px;
+    background-color: white;
+    border-radius: 5px 5px 5px 0;
+    box-shadow: 0px 15px 35px rgba(50, 50, 93, 0.1), 0px 5px 15px rgba(0, 0, 0, 0.07);
+    padding: 10px;
+    margin-top: 5rem;
+}

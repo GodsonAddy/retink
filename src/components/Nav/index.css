@@ -1,0 +1,171 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #333;
+    box-shadow: 0 1px 1em;
+    padding: 0 50px;
+    width: 100%
+}
+
+.retink-logo {
+    height: 100px;
+    width: 100px;
+    outline: none;
+}
+
+.links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.links li{
+    list-style: none;
+}
+
+.links li a {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+}
+
+.links li a:hover {
+    color: grey;
+}
+
+.nav-button {
+    color: white;
+    background-color: #1976d2;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 11px 20px;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    line-height: 1;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-button:hover {
+    background-color: #0d47a1;
+}
+
+.gg-key {
+    margin-right: 13px;
+    transform: rotate(320deg);
+    outline: none;
+}
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 2.5rem;
+    left: 1rem;
+}
+
+.gg-close {
+    outline: none;
+}
+
+.gg-menu {
+    outline: none;
+}
+
+
+
+@media only screen and (max-width: 550px) {
+  
+    .retink-logo{
+       position: absolute;
+       top: -0.2rem;
+       left: 7rem;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .gg-close {
+        position: absolute;
+        top: 1.8rem
+    }
+
+    .nav-bar {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 30px 10px;
+    }
+
+    .links {
+        width: 100%;
+        display: none;
+    }
+
+    .links ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .links li {
+       text-align: left;
+    }
+
+    .links li a {
+        padding: .5rem 1rem;
+        justify-content: flex-start;
+    }
+
+    .links.active {
+        display: flex;  
+    }
+    
+}
+
+@media (max-width: 280px) {
+   
+    .nav-bar {
+        flex-direction: row;
+        align-items: flex-start; 
+    }
+
+    .nav-button {
+        margin-top: 5px;
+        font-size: 10px;
+        padding: 8px 20px;
+        font-weight: 500;
+        display: flex;
+        line-height: 1;
+    }
+
+    .retink-logo{
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        top: 1rem;
+        left: 6rem;
+    }
+    
+    .gg-key {
+        width: 0.5px;
+        margin-left: 1px;
+    }
+
+    .menu-btn {
+        position: absolute;
+        top: 3rem;
+    }
+
+    .gg-close{
+        position: absolute;
+        top: 2.5rem;
+    }
+}
