@@ -6,10 +6,9 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../../firebase.config";
 
 function Nav() {
-  const ref = useRef();
   const [loggedUser, setLoggedUser] = useState({});
-  const [click, setClick] = useState(true);
 
+  const ref = useRef();
   const navigate = useNavigate();
 
   onAuthStateChanged(auth, (currentUser) => {
@@ -17,15 +16,7 @@ function Nav() {
   });
 
   const showClick = () => {
-    setClick(true);
     ref.current.classList.toggle("active");
-    setClick(false);
-  };
-
-  const closeClick = () => {
-    setClick(false);
-    ref.current.classList.toggle("active");
-    setClick(true);
   };
 
   const logout = async () => {
@@ -34,11 +25,7 @@ function Nav() {
 
   return (
     <div className="nav-bar">
-      {click ? (
-        <i className="gg-menu menu-btn" onClick={showClick}></i>
-      ) : (
-        <i className="gg-close menu-btn" onClick={closeClick}></i>
-      )}
+      <i className="gg-menu menu-btn" onClick={showClick}></i>
 
       <a href="/">
         <img alt="retink" className="retink-logo" src={retink} />
